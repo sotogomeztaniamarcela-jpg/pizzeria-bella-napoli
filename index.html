@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pizzería Bella Napoli en Canalete, Córdoba. Pizzas, entradas, bebidas y postres.">
+  <title>Bella Napoli | Pizzería</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <span>✦ EL PLACER DE COMPARTIR ✦</span>
+    <span>📍 Canalete, Córdoba</span>
+  </div>
+
+  <header class="header">
+    <a href="#inicio" class="logo">
+      <span class="logo-icon">🍕</span>
+      <span class="logo-text">BELLA <strong>NAPOLI</strong>
+        <small>PIZZERÍA • COCINA CON AMOR</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#" data-whatsapp class="nav-order">Ordenar ahora ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">BUON CIBO, BELLI MOMENTI</span>
+        <h1>Un pedacito de Italia en <em>cada bocado.</em></h1>
+        <p class="hero-description">
+          Pizzas irresistibles, ingredientes deliciosos y momentos
+          especiales para compartir con quienes más quieres.
+          ¡Tu próximo antojo comienza aquí!
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Descubrir el menú ↗</a>
+          <a href="#nosotros" class="btn btn-outline">Conócenos</a>
+        </div>
+
+        <div class="hero-note">
+          <span>✦ Sabor que enamora</span>
+          <span>♥ Preparado con cariño</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=85"
+          alt="Pizza artesanal con queso e ingredientes frescos">
+        <div class="image-badge">
+          <span>EL FAVORITO DE LA CASA</span>
+          <strong>Una delicia en cada porción</strong>
+          <span>Momentos para saborear ♥</span>
+        </div>
+        <span class="decor decor-one">✦</span>
+        <span class="decor decor-two">✦</span>
+      </div>
+    </section>
+
+    <section class="features">
+      <div><span>🍕</span><p><strong>Pizzas irresistibles</strong><small>Para todos los gustos</small></p></div>
+      <div><span>🥤</span><p><strong>Bebidas refrescantes</strong><small>El complemento perfecto</small></p></div>
+      <div><span>❤️</span><p><strong>Hecho con cariño</strong><small>Sabor para compartir</small></p></div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <span class="eyebrow">NUESTROS SABORES</span>
+        <h2>Un menú para <em>disfrutar</em></h2>
+        <p>Elige tu favorito, invita a los tuyos y disfruta algo delicioso.</p>
+      </div>
+
+      <div class="category-filters" role="group" aria-label="Filtrar productos">
+        <button class="filter-btn active" data-filter="todas" aria-pressed="true">Todo el menú</button>
+        <button class="filter-btn" data-filter="pizzas" aria-pressed="false">🍕 Pizzas</button>
+        <button class="filter-btn" data-filter="entradas" aria-pressed="false">🧀 Entradas</button>
+        <button class="filter-btn" data-filter="bebidas" aria-pressed="false">🥤 Bebidas</button>
+        <button class="filter-btn" data-filter="postres" aria-pressed="false">🍰 Postres</button>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- PIZZAS -->
+
+        <article class="product-card" data-category="pizzas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza napolitana">
+            <span class="product-tag">Favorita</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">ESPECIALIDAD</span>
+            <h3>Pizza Napolitana</h3>
+            <p>Salsa de tomate, mozzarella, tomate fresco y albahaca.</p>
+            <div class="product-bottom"><strong>$28.000</strong><button class="add-order" data-product="Pizza Napolitana">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pizzas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=700&q=80" alt="Pizza pepperoni">
+          </div>
+          <div class="product-info">
+            <span class="product-category">CLÁSICA</span>
+            <h3>Pizza Pepperoni</h3>
+            <p>Pepperoni, salsa de tomate y abundante queso mozzarella.</p>
+            <div class="product-bottom"><strong>$32.000</strong><button class="add-order" data-product="Pizza Pepperoni">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pizzas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=80" alt="Pizza de jamón y queso">
+          </div>
+          <div class="product-info">
+            <span class="product-category">TRADICIONAL</span>
+            <h3>Jamón y Queso</h3>
+            <p>Jamón, queso fundido y salsa especial de la casa.</p>
+            <div class="product-bottom"><strong>$30.000</strong><button class="add-order" data-product="Pizza Jamón y Queso">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pizzas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza hawaiana">
+          </div>
+          <div class="product-info">
+            <span class="product-category">TOQUE DULCE</span>
+            <h3>Pizza Hawaiana</h3>
+            <p>Jamón, piña y queso derretido en una combinación deliciosa.</p>
+            <div class="product-bottom"><strong>$31.000</strong><button class="add-order" data-product="Pizza Hawaiana">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pizzas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=700&q=80" alt="Pizza vegetariana">
+          </div>
+          <div class="product-info">
+            <span class="product-category">FRESCA Y COLORIDA</span>
+            <h3>Pizza Vegetariana</h3>
+            <p>Champiñones, pimentón, cebolla, tomate y mozzarella.</p>
+            <div class="product-bottom"><strong>$29.000</strong><button class="add-order" data-product="Pizza Vegetariana">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pizzas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80" alt="Pizza cuatro quesos">
+          </div>
+          <div class="product-info">
+            <span class="product-category">PARA AMANTES DEL QUESO</span>
+            <h3>Pizza Cuatro Quesos</h3>
+            <p>Mezcla cremosa de quesos sobre una masa dorada.</p>
+            <div class="product-bottom"><strong>$35.000</strong><button class="add-order" data-product="Pizza Cuatro Quesos">Pedir +</button></div>
+          </div>
+        </article>
+
+        <!-- ENTRADAS -->
+
+        <article class="product-card" data-category="entradas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1531749668029-2db88e4276c7?auto=format&fit=crop&w=700&q=80" alt="Dedos de queso">
+          </div>
+          <div class="product-info">
+            <span class="product-category">NUEVO ANTOJO</span>
+            <h3>Dedos de Queso</h3>
+            <p>Queso derretido por dentro con una cubierta crujiente.</p>
+            <div class="product-bottom"><strong>$12.000</strong><button class="add-order" data-product="Dedos de Queso">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="entradas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Papas fritas">
+          </div>
+          <div class="product-info">
+            <span class="product-category">CRUJIENTES</span>
+            <h3>Papas a la Francesa</h3>
+            <p>Papas doradas con una deliciosa salsa para acompañar.</p>
+            <div class="product-bottom"><strong>$10.000</strong><button class="add-order" data-product="Papas a la Francesa">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="entradas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="Ensalada fresca">
+          </div>
+          <div class="product-info">
+            <span class="product-category">FRESCA</span>
+            <h3>Ensalada de la Casa</h3>
+            <p>Vegetales frescos, tomate y un aderezo delicioso.</p>
+            <div class="product-bottom"><strong>$12.000</strong><button class="add-order" data-product="Ensalada de la Casa">Pedir +</button></div>
+          </div>
+        </article>
+
+        <!-- BEBIDAS -->
+
+        <article class="product-card" data-category="bebidas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=700&q=80" alt="Jugo de fruta natural">
+          </div>
+          <div class="product-info">
+            <span class="product-category">FRUTA NATURAL</span>
+            <h3>Jugo Natural</h3>
+            <p>Preparado al momento. Consulta los sabores disponibles.</p>
+            <div class="product-bottom"><strong>$7.000</strong><button class="add-order" data-product="Jugo Natural">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="bebidas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80" alt="Malteada de fresa">
+          </div>
+          <div class="product-info">
+            <span class="product-category">CREMOSA</span>
+            <h3>Malteada de Fresa</h3>
+            <p>Bebida cremosa con sabor a fresa, ideal para darte un gusto.</p>
+            <div class="product-bottom"><strong>$12.000</strong><button class="add-order" data-product="Malteada de Fresa">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="bebidas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=700&q=80" alt="Gaseosa fría">
+          </div>
+          <div class="product-info">
+            <span class="product-category">BIEN FRÍA</span>
+            <h3>Gaseosa</h3>
+            <p>La bebida clásica para acompañar una pizza recién horneada.</p>
+            <div class="product-bottom"><strong>$5.000</strong><button class="add-order" data-product="Gaseosa">Pedir +</button></div>
+          </div>
+        </article>
+
+
+
+        <article class="product-card" data-category="bebidas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=700&q=80" alt="Batido de mango">
+          </div>
+          <div class="product-info">
+            <span class="product-category">FRUTAL</span>
+            <h3>Batido de Mango</h3>
+            <p>Una bebida frutal con el sabor tropical del mango.</p>
+            <div class="product-bottom"><strong>$9.000</strong><button class="add-order" data-product="Batido de Mango">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="bebidas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=700&q=80" alt="Agua embotellada">
+          </div>
+          <div class="product-info">
+            <span class="product-category">SIMPLE Y REFRESCANTE</span>
+            <h3>Agua Embotellada</h3>
+            <p>Una opción refrescante para acompañar tu comida.</p>
+            <div class="product-bottom"><strong>$3.000</strong><button class="add-order" data-product="Agua Embotellada">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="bebidas">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=700&q=80" alt="Soda de frutas">
+          </div>
+          <div class="product-info">
+            <span class="product-category">BURBUJAS Y SABOR</span>
+            <h3>Soda de Frutas</h3>
+            <p>Bebida con burbujas y un toque frutal delicioso.</p>
+            <div class="product-bottom"><strong>$8.000</strong><button class="add-order" data-product="Soda de Frutas">Pedir +</button></div>
+          </div>
+        </article>
+
+        <!-- POSTRES -->
+
+        <article class="product-card" data-category="postres">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Torta de chocolate">
+          </div>
+          <div class="product-info">
+            <span class="product-category">DULCE TENTACIÓN</span>
+            <h3>Torta de Chocolate</h3>
+            <p>Bizcocho suave de chocolate para terminar con dulzura.</p>
+            <div class="product-bottom"><strong>$10.000</strong><button class="add-order" data-product="Torta de Chocolate">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="postres">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="Helado">
+          </div>
+          <div class="product-info">
+            <span class="product-category">UN MOMENTO DULCE</span>
+            <h3>Helado</h3>
+            <p>Una porción deliciosa. Pregunta por los sabores disponibles.</p>
+            <div class="product-bottom"><strong>$8.000</strong><button class="add-order" data-product="Helado">Pedir +</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="postres">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Postre cremoso">
+          </div>
+          <div class="product-info">
+            <span class="product-category">DELICIA DE LA CASA</span>
+            <h3>Postre Cremoso</h3>
+            <p>Un postre suave y delicioso para cerrar una gran comida.</p>
+            <div class="product-bottom"><strong>$9.000</strong><button class="add-order" data-product="Postre Cremoso">Pedir +</button></div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="menu-note">Los precios son de ejemplo y deben confirmarse antes de publicar el menú.</p>
+    </section>
+
+    <section class="story-section" id="nosotros">
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85" alt="Pizza preparada con dedicación">
+        <div class="story-stamp">FATTO CON<br><strong>AMORE ♥</strong></div>
+      </div>
+
+      <div class="story-content">
+        <span class="eyebrow">NUESTRA HISTORIA</span>
+        <h2>El secreto está en cocinar con <em>amor.</em></h2>
+        <p>
+          En Pizzería Bella Napoli creemos que los mejores momentos
+          nacen alrededor de una buena mesa. Nos inspira el sabor de
+          la cocina italiana, el aroma de una pizza recién horneada
+          y la felicidad de compartir con familia y amigos.
+        </p>
+        <p>
+          Desde Canalete, Córdoba, queremos brindarte una experiencia
+          deliciosa, con preparaciones llenas de sabor, atención amable
+          y el cariño que ponemos en cada plato.
+        </p>
+        <a href="#menu" class="btn btn-primary">Conoce nuestro menú ↗</a>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <span>❝</span>
+      <h2>La felicidad tiene forma<br>de pizza recién horneada.</h2>
+      <p>BUON CIBO, BELLI MOMENTI.</p>
+    </section>
+
+    <section class="contact-section section" id="contacto">
+      <div class="section-heading">
+        <span class="eyebrow">ESTAMOS PARA TI</span>
+        <h2>Ven a disfrutar con nosotros</h2>
+        <p>Tu próximo momento delicioso comienza en Bella Napoli.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div><h3>Ubicación</h3><p>Canalete, Córdoba, Colombia</p></div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <h3>Pedidos por WhatsApp</h3>
+              <p>322 535 9482</p>
+              <a href="#" data-whatsapp>Escríbenos ahora ↗</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">🕒</span>
+            <div>
+              <h3>Horario</h3>
+              <p>Horario pendiente de confirmar.</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">🍕</span>
+            <div>
+              <h3>¡Te esperamos!</h3>
+              <p>Comparte una buena pizza con las personas que quieres.</p>
+            </div>
+          </div>
+
+          <a href="#" data-whatsapp class="btn btn-primary contact-cta">Pedir por WhatsApp ↗</a>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            title="Mapa de Canalete, Córdoba"
+            src="https://maps.google.com/maps?q=Canalete%2C%20C%C3%B3rdoba%2C%20Colombia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+          <div class="map-caption">
+            <span>📍</span>
+            <div><strong>Pizzería Bella Napoli</strong><small>Canalete, Córdoba, Colombia</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="logo footer-logo">
+      <span class="logo-icon">🍕</span>
+      <span class="logo-text">BELLA <strong>NAPOLI</strong><small>PIZZERÍA • COCINA CON AMOR</small></span>
+    </a>
+    <p>El placer de compartir algo delicioso. ♥</p>
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <small>© <span id="currentYear"></span> Pizzería Bella Napoli. Todos los derechos reservados.</small>
+  </footer>
+
+  <a class="whatsapp-float" href="#" data-whatsapp aria-label="Hacer pedido por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M16 .8A15 15 0 0 0 3.1 23.5L1 31l7.7-2A15.1 15.1 0 1 0 16 .8Zm0 27.5a12.4 12.4 0 0 1-6.3-1.7l-.5-.3-4.6 1.2 1.2-4.5-.3-.5A12.4 12.4 0 1 1 16 28.3Zm6.8-9.3c-.4-.2-2.1-1-2.5-1.1-.3-.1-.6-.2-.8.2-.3.4-.9 1.1-1.1 1.3-.2.3-.4.3-.8.1-.4-.2-1.5-.5-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7l-1.1-2.7c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.8c.2.2 2.6 4 6.4 5.6 2.4 1 3.3 1 4.5.9.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
